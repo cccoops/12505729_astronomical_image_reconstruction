@@ -1,9 +1,12 @@
 # 12505729_astronomical_image_reconstruction
 
 Python version: 3.11.2 <br>
-This model uses a UNet architecture for reconstruction of blurry images. The final model can be found in the file 'best_cnn_unet.ipynb'. <br> 
+This model uses a UNet architecture for reconstruction of blurry images. <br>
+The final model can be found in the file 'best_cnn_unet.ipynb'. <br> 
 Dataset: ESA Hubble Images - 3 classes (https://www.kaggle.com/datasets/subhamshome/esa-hubble-images-3-classes?select=galaxies). <br>
-Note: to run model download images from the link, make a folder 'images' in directory, and add pictures to folder 'images' .
+Note: to run model download images from the link, make a folder 'images' in directory, and add pictures to folder 'images'. <br>
+In my original project proposal I wanted to use ViTs, however this was too difficult for me to implement succesfully. Hence my models remains a UNNet which also was my intended baseline model. 
+
 ## Summary of model
 The end-to-end pipeline goes as follows: 
 - Load images from directory
@@ -48,6 +51,10 @@ Results: <br>
 - Failed to be visually convinced. 
 - Time: 77.77 minutes
 
+![alt text](<Screenshot 2025-12-16 at 21.40.04.png>)
+
+
+
 ### Baseline model results
 Optimiser: SGD (learning rate 1e-1)<br>
 #batches: 8 <br>
@@ -57,5 +64,7 @@ Results: <br>
 - SSIM = 29.23 dB
 - Failed to be visually convinced. 
 - Time: 75.40 minutes
+
+![alt text](<Screenshot 2025-12-16 at 21.40.29.png>)
 
 Experiments of only Adam and MSE are excluded. 
