@@ -1,0 +1,17 @@
+# Ignore Data
+images/
+data/
+
+# Ignore Model Weights (Binary files)
+*.pth
+*.pt
+
+# Ignore Python Cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Ignore Virtual Env
+.venv/
+venv/
+.DS_Store
