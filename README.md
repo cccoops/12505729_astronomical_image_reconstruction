@@ -7,6 +7,11 @@ Dataset: ESA Hubble Images - 3 classes (https://www.kaggle.com/datasets/subhamsh
 Note: to run model download images from the link, make a folder 'images' in directory, and add pictures to folder 'images'. <br>
 In my original project proposal I wanted to use ViTs, however this was too difficult for me to implement succesfully. Hence my models remains a UNNet which also was my intended baseline model. 
 
+## How to run demo application
+1. Run ```python3 demo.py``` or ```python demo.py``` in your terminal. 
+2. A local URL will be accessible in the terminal as: http://127.0.0.1:XYZ.
+3. The web application will then try to restore any astronomical image you upload. 
+
 ## Summary of model
 The end-to-end pipeline goes as follows: 
 - Load images from directory
